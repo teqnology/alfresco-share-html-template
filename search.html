@@ -64,15 +64,6 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">${userName} Dashboard</span>
           <div class="mdl-layout-spacer"></div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search" />
-              <label class="mdl-textfield__label" for="search">Enter your query...</label>
-            </div>
-          </div>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
             <i class="material-icons">more_vert</i>
           </button>
@@ -85,7 +76,7 @@
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
-		  <i class="material-icons">account_circle</i>
+		    <i class="material-icons">account_circle</i>
           <div class="demo-avatar-dropdown">
             <span>${user.properties.email}</span>
             <div class="mdl-layout-spacer"></div>
@@ -115,114 +106,13 @@
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
-			<div class="mdl-card mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-			  <div class="mdl-card__title">
-			    <h2 class="mdl-card__title-text">Welcome</h2>
-			  </div>
-			  <div class="mdl-card__supporting-text">
-			    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			    Mauris sagittis pellentesque lacus eleifend lacinia...
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      Get Started
-			    </a>
-			  </div>
-			  <div class="mdl-card__menu">
-			    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-			      <i class="material-icons">share</i>
-			    </button>
-				<!-- Right aligned menu below button -->
-				<button id="demo-menu-lower-right"
-				        class="mdl-button mdl-js-button mdl-button--icon">
-				  <i class="material-icons">more_vert</i>
-				</button>
-
-				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-				    for="demo-menu-lower-right">
-				  <li class="mdl-menu__item">Some Action</li>
-				  <li class="mdl-menu__item">Another Action</li>
-				  <li disabled class="mdl-menu__item">Disabled Action</li>
-				  <li class="mdl-menu__item">Yet Another Action</li>
-				</ul>
-			  </div>
-			</div>
-			<div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-				<div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-				  <div class="mdl-card__title mdl-card--expand mdl-color--blue-300">
-				    <h2 class="mdl-card__title-text">My Tasks</h2>
-				  </div>
-				  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-				    Non dolore elit adipisicing ea reprehenderit consectetur culpa.
-				  </div>
-				  <div class="mdl-card__actions mdl-card--border">
-				    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">View</a>
-				  </div>
-				</div>
-				<div class="demo-separator mdl-cell--1-col"></div>
-				<div class="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-				  <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-				    <h3>Bookmarks</h3>
-				    <ul>
-				      <li>
-				        <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-				          <input type="checkbox" id="chkbox1" class="mdl-checkbox__input" />
-				          <span class="mdl-checkbox__label">Followers</span>
-				        </label>
-				      </li>
-				      <li>
-				        <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-				          <input type="checkbox" id="chkbox2" class="mdl-checkbox__input" />
-				          <span class="mdl-checkbox__label">My Files</span>
-				        </label>
-				      </li>
-				      <li>
-				        <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-				          <input type="checkbox" id="chkbox3" class="mdl-checkbox__input" />
-				          <span class="mdl-checkbox__label">External URL</span>
-				        </label>
-				      </li>
-				      <li>
-				        <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-				          <input type="checkbox" id="chkbox4" class="mdl-checkbox__input" />
-				          <span class="mdl-checkbox__label">Document</span>
-				        </label>
-				      </li>
-				    </ul>
-				  </div>
-				  <div class="mdl-card__actions mdl-card--border">
-				    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Update Bookmarks</a>
-				    <div class="mdl-layout-spacer"></div>
-					<i class="material-icons">bookmark_border</i>
-				  </div>
-				</div>
-			</div>
-			<div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-				<div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-				  <div class="mdl-card__title mdl-card--expand mdl-color--red-300">
-				    <h2 class="mdl-card__title-text">My Sites</h2>
-				  </div>
-				  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-				    Non dolore elit adipisicing ea reprehenderit consectetur culpa.
-				  </div>
-				  <div class="mdl-card__actions mdl-card--border">
-				    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">View</a>
-				  </div>
-				</div>
-			</div>
-			<div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-				<div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-				  <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-				    <h2 class="mdl-card__title-text">Recent Activities</h2>
-				  </div>
-				  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-				    Non dolore elit adipisicing ea reprehenderit consectetur culpa.
-				  </div>
-				  <div class="mdl-card__actions mdl-card--border">
-				    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">View</a>
-				  </div>
-				</div>
-			</div>
+          <!-- Textfield with Floating Label -->
+          <form action="#" class=" mdl-cell mdl-cell--12-col mdl-grid">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+              <input class="mdl-textfield__input" type="text" id="sample3" />
+              <label class="mdl-textfield__label" for="sample3">Text...</label>
+            </div>
+          </form>
         </div>
       </main>
     </div>
